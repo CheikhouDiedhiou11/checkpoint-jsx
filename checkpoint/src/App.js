@@ -1,25 +1,13 @@
-
+import React from 'react';
 import './App.css';
-import Description from './Component/Description';
-import Image from './Component/Image';
-import Prix from './Component/Prix';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from 'react-bootstrap/Card';
-import Name from './Component/Name';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import PlayersList from './PlayersList';
+
 function App() {
   return (
     <div className="App">
-    <Card style={{ width: '40rem' , backgroundColor:'black',color:'orange'}}>
-        <Image />  
-      <Card.Body>
-        <Card.Title>Nom:<Name />. Prix:<Prix /></Card.Title>
-        <Card.Text>
-          < Description />
-        </Card.Text>
-       
-      </Card.Body>
-    </Card>
- 
+      <h1>Player List</h1>
+      <PlayersList />
     </div>
   );
 }
