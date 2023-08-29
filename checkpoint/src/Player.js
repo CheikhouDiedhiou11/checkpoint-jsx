@@ -15,6 +15,7 @@ const Player = ({ name, team, nationality, Number, age, imageUrl }) => {
         <Card.Text>Age: {age}</Card.Text>
       </Card.Body>
     </Card>
+
     
   );
 };
